@@ -15,19 +15,19 @@ import com.jhlabs.image.AbstractBufferedImageOp;
  * @author gloomy fish
  *
  */
-public class ConBriFilter extends AbstractBufferedImageOp {
+public class contest extends AbstractBufferedImageOp {
 
 	private float contrast = 1.5f; // default value;
 	private float brightness = 1.0f; // default value;
 	
 	public static void main(String[] args) throws IOException {
-		ConBriFilter briFilter = new ConBriFilter();
+		contest briFilter = new contest();
 		File from = new File("/Users/lixf/competImgtest/1_80.jpg");
 		BufferedImage src = ImageIO.read(from);
 		BufferedImage filter = briFilter.filter(src, null);
 		ImageIO.write(filter, "jpg", new File(  "/Users/lixf/competImgtest/2_11.jpg"));
 	}
-	public ConBriFilter() {
+	public contest() {
 		// do stuff here if you need......
 	}
 	
